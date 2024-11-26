@@ -1,0 +1,491 @@
+:root {
+  --primary-color: #f4f4f4;
+  --secondary-color: #5e5e5e;
+  --accent-color: #3a3a3a;
+  --hover-color: #009688;
+  --white-color: #fff;
+  --text-color: #333;
+  --highlight-color: #009688;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: var(--white-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid var(--accent-color);
+  padding: 0.8rem 1.5rem; /* Increased padding for a taller navbar */
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  font-size: 1.5rem; /* Increased font size */
+  margin-right: 20px; /* Added margin between logo and text */
+}
+
+.navbar-brand img {
+  height: 50px; /* Increased logo size */
+  width: auto;
+  margin-right: 15px; /* Adjusted spacing between logo and brand name */
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.4rem 0.7rem; /* Slightly larger toggler button for better usability */
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600; /* Made text bolder */
+  color: var(--secondary-color);
+  margin-left: 20px; /* Increased spacing between menu items */
+  transition: color 0.3s ease;
+  font-size: 1rem; /* Increased font size */
+  padding: 0.6rem 0.8rem; /* Adjusted padding for better spacing */
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--highlight-color);
+}
+
+
+.carousel-inner img {
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  max-width: 90%;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.25rem;
+  color: var(--white-color);
+}
+
+.footer {
+  background-color: var(--white-color);
+  padding: 40px 20px;
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 1rem;
+  border-top: 2px solid var(--accent-color);
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--highlight-color);
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+/* Overview Section */
+.overview {
+  background-color: #f8f9fa;  /* Light background for a clean, professional look */
+  padding: 60px 20px;
+  border-top: 4px solid #2c3e50;
+}
+
+.overview-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;  /* Stack content vertically on mobile */
+}
+
+.overview-text {
+  text-align: center;
+  color: #333;
+  max-width: 800px;  /* Limit text width for readability */
+}
+
+.overview-text h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.overview-text p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.overview-text .btn-learn-more {
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.overview-text .btn-learn-more:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .overview-content {
+      flex-direction: column;
+      padding: 40px 20px;  /* Reduce padding for smaller screens */
+  }
+
+  .overview-text h2 {
+      font-size: 2rem;
+  }
+
+  .overview-text p {
+      font-size: 1rem;
+  }
+
+  .overview-text .btn-learn-more {
+      font-size: 0.95rem;
+  }
+}
+
+
+
+
+/* Program Section */
+.program {
+  background-color: #f8f9fa; /* Light background for a clean look */
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 4px solid #2c3e50;
+}
+
+.program-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.program-content h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.program-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.strand-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.strand {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.strand:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.strand i {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.strand:hover i {
+  color: #2980b9;
+}
+
+.strand h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.strand p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.strand i {
+  font-size: 2.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .program-content h2 {
+      font-size: 2rem;
+  }
+
+  .strand i {
+      font-size: 2rem;
+  }
+
+  .strand h3 {
+      font-size: 1.2rem;
+  }
+
+  .strand p {
+      font-size: 0.95rem;
+  }
+}
+
+.organization-card {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100%;
+}
+
+.organization-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.organization-card img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.organization-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 15px 0;
+  color: #333;
+  text-align: center;
+}
+
+.organization-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 15px 0;
+  text-align: center; /* Center-align text */
+}
+
+
+.row.g-4 {
+  gap: 30px; /* Adds consistent spacing between cards */
+}
+
+/* Typography for Section Title */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+p.text-center {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .organization-card {
+      padding: 15px;
+  }
+
+  .organization-card h3 {
+      font-size: 1.1rem;
+  }
+
+  .organization-card p {
+      font-size: 0.9rem;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  p.text-center {
+      font-size: 1rem;
+  }
+}
+
+/* Contact Section Styling */
+.contact {
+  background-color: #ffffff; /* Clean white background */
+  border: 1px solid #ececec; /* Subtle border for structure */
+  border-radius: 10px; /* Smooth corners for elegance */
+  padding: 50px 30px; /* Generous padding for better spacing */
+  margin: 30px 0; /* Spacing above and below the section */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+}
+
+/* Section Heading Styling */
+.contact h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #343a40; /* Neutral dark gray for text */
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #6c757d; /* Subtle gray for text */
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Card Styling */
+.contact .card {
+  background-color: #f9f9f9; /* Neutral light gray for contrast */
+  border: none; /* No border for a clean look */
+  border-radius: 8px; /* Smooth corners for cards */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  padding: 25px; /* Padding inside the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .card:hover {
+  transform: translateY(-3px); /* Slight hover effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+/* Card Heading and Text */
+.contact .card h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #495057; /* Neutral gray for headings */
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center; /* Align icon with text */
+}
+
+.contact .card p {
+  font-size: 1rem;
+  color: #6c757d; /* Subtle gray for card text */
+  margin-bottom: 10px;
+}
+
+/* Map Styling */
+.map-container {
+  border: 1px solid #ececec; /* Border around the map */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Prevents content overflow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for the map */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .contact .card h5 {
+      font-size: 1.1rem; /* Slightly smaller heading font */
+  }
+  .contact .card p {
+      font-size: 0.95rem; /* Adjust text size for smaller screens */
+  }
+  .contact h2 {
+      font-size: 1.8rem; /* Adjust heading size for smaller screens */
+  }
+}
+
+.highlight-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.highlight-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.highlight-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.highlight-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.highlight-description {
+  font-size: 1rem;
+  color: #555;
+}

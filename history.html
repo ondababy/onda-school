@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WBNHS Highlights</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <link href="nav.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/wbnhs-logo.png" alt="WBNHS Logo">
+                    WBNHS
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#programs" id="navbarDropdownPrograms" role="button" data-bs-toggle="dropdown">
+                                Programs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="organization.html">Clubs & Societies</a></li>
+                                <li><a class="dropdown-item" href="activities.html">Workshops</a></li>
+                                <li><a class="dropdown-item" href="events.html">Occasions</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#announcements" id="navbarDropdownUpdates" role="button" data-bs-toggle="dropdown">
+                                Announcements
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="featured.html">Highlights</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#overview" id="navbarDropdownOverview" role="button" data-bs-toggle="dropdown">
+                                Overview
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                                <li><a class="dropdown-item" href="vision.html">Goals & Values</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#get-in-touch">Get in Touch</a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+        </nav>
+        
+        <div class="footer text-center py-3">
+            <p>&copy; 2024 WBNHS. All rights reserved.</p>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000, // Animation duration
+                easing: 'ease-in-out', // Animation easing
+                once: true, // Whether animation should happen only once
+                offset: 120, // Offset value for triggering animations
+                disable: 'mobile' // Disable AOS on mobile devices to improve performance
+            });
+        </script>
+    </body>
+</html>
