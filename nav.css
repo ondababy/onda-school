@@ -304,19 +304,36 @@ body {
       font-size: 0.95rem;
   }
 }
+.organization-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.organization-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.organization-section p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
 
 .organization-card {
-  text-align: center;
-  padding: 20px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  height: 100%;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 300px;
 }
 
 .organization-card:hover {
@@ -335,57 +352,33 @@ body {
 .organization-card h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  margin: 15px 0;
-  color: #333;
-  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
 
 .organization-card p {
   font-size: 0.95rem;
   color: #555;
   line-height: 1.6;
-  margin: 15px 0;
-  text-align: center; /* Center-align text */
 }
 
-
-.row.g-4 {
-  gap: 30px; /* Adds consistent spacing between cards */
+.organizations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Typography for Section Title */
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #2c3e50;
-}
-
-p.text-center {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.8;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .organization-card {
-      padding: 15px;
+      margin: 10px;
+      max-width: 100%;
   }
 
-  .organization-card h3 {
-      font-size: 1.1rem;
+  .organization-section h1 {
+      font-size: 2rem;
   }
 
-  .organization-card p {
-      font-size: 0.9rem;
-  }
-
-  h1 {
-      font-size: 1.8rem;
-  }
-
-  p.text-center {
+  .organization-section p {
       font-size: 1rem;
   }
 }
@@ -466,26 +459,225 @@ p.text-center {
       font-size: 1.8rem; /* Adjust heading size for smaller screens */
   }
 }
+.highlight-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.highlight-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 30px;
+}
+
+.highlight-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
 
 .highlight-image {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
-.highlight-card {
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.highlight-card:hover {
+
+.highlight-card:hover .highlight-image {
   transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
 }
-.highlight-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
+
 .highlight-description {
   font-size: 1rem;
   color: #555;
+  line-height: 1.6;
 }
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.about-us-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .highlight-title {
+      font-size: 1.5rem;
+  }
+
+  .highlight-description {
+      font-size: 0.9rem;
+  }
+}
+/* Section Styling */
+section {
+  padding: 60px 0; /* Spacious padding for each section */
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow to add depth */
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.mission-vision h2 {
+  font-size: 36px;
+  color: #003366;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mission-vision h3 {
+  font-size: 28px;
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.mission-vision p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Core Values Section */
+.core-values {
+  background-color: #e3f2fd;
+  border-radius: 10px;
+}
+
+.core-values .bi {
+  font-size: 70px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.core-values .bi-excellence {
+  color: #4caf50;
+}
+
+.core-values .bi-integrity {
+  color: #ff9800;
+}
+
+.core-values .bi-innovation {
+  color: #2196f3;
+}
+
+.core-values .bi:hover {
+  transform: scale(1.3); /* Slightly bigger on hover for emphasis */
+  color: #333; /* Darker color on hover */
+}
+
+.core-values h4 {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.core-values p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* School Facilities Section */
+.school-facilities .card {
+  border: none;
+  border-radius: 12px; /* Rounded corners for cards */
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow on cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.school-facilities .card:hover {
+  transform: translateY(-10px); /* Slight upward hover effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.school-facilities .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid #003366; /* A subtle border under the image */
+}
+
+.school-facilities .card-title {
+  font-size: 20px;
+  color: #003366;
+  font-weight: 700;
+}
+
+.school-facilities .card-text {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .core-values .col-md-4, .school-facilities .col-md-4 {
+      margin-bottom: 30px;
+  }
+
+  .mission-vision, .core-values, .school-facilities {
+      padding: 40px 20px; /* Slightly less padding on mobile */
+  }
+}
+/* Announcement Section Styles */
+.announcement {
+  background-color: #343a40; /* Dark Gray Background */
+  color: #f8f9fa; /* White text */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px 0;
+}
+
+.announcement .announcement-icon {
+  font-size: 80px; /* Larger megaphone icon */
+  color: #f1c40f; /* Yellow color for the icon */
+}
+
+.announcement h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.announcement-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+.announcement-button {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  background-color: #f39c12; /* Bright yellow button */
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.announcement-button:hover {
+  background-color: #e67e22; /* Darker yellow on hover */
+  transition: background-color 0.3s ease;
+}
+
+

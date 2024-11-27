@@ -4,11 +4,70 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WBNHS Highlights</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+            rel="stylesheet">
         <link href="nav.css" rel="stylesheet">
+        <style>
+            .section-title {
+                font-size: 2rem;
+                font-weight: 600;
+                color: #343a40;
+                margin-bottom: 30px;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .timeline-card {
+                background-color: #ffffff;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                margin-bottom: 20px;
+            }
+
+            .timeline-header {
+                background-color: #28a745;
+                color: white;
+                padding: 15px;
+                border-radius: 8px 8px 0 0;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            .timeline-body {
+                padding: 20px;
+            }
+
+            .timeline-date {
+                font-size: 0.9rem;
+                color: #6c757d;
+                margin-bottom: 15px;
+            }
+
+            .timeline-card p {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+
+            .timeline-card:hover {
+                transform: translateY(-5px);
+                transition: all 0.3s ease-in-out;
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg">
@@ -23,17 +82,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#programs" id="navbarDropdownPrograms" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#programs" id="go-to-program" role="button" data-bs-toggle="dropdown">
                                 Programs
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="organization.html">Clubs & Societies</a></li>
-                                <li><a class="dropdown-item" href="activities.html">Workshops</a></li>
-                                <li><a class="dropdown-item" href="events.html">Occasions</a></li>
+                                <li><a class="dropdown-item" href="occassion.html">Occasions</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#announcements" id="navbarDropdownUpdates" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#announcements" id="go-to-announcement" role="button" data-bs-toggle="dropdown">
                                 Announcements
                             </a>
                             <ul class="dropdown-menu">
@@ -41,37 +99,187 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#overview" id="navbarDropdownOverview" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#overview" id="go-to-overview" role="button" data-bs-toggle="dropdown">
                                 Overview
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="history.html">History</a></li>
-                                <li><a class="dropdown-item" href="vision.html">Goals & Values</a></li>
+                                <li><a class="dropdown-item" href="goals.html">Goals & Values</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#get-in-touch">Get in Touch</a>
+                            <a class="nav-link" href="#get-in-touch" id="go-to-contact">Get in Touch</a>
                         </li>
                     </ul>
                 </div>                
             </div>
-        </nav>
-        
-        <div class="footer text-center py-3">
-            <p>&copy; 2024 WBNHS. All rights reserved.</p>
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </nav>  
+
+        <div class="container py-5" data-aos="fade-up">
+            <h2 class="section-title">Western Bicutan National High School</h2>
+            <p>Western Bicutan National High School boasts a comprehensive range
+                of facilities designed to support a well-rounded education. From
+                computer laboratories to science labs and technical rooms, the
+                school provides students with hands-on learning experiences
+                essential for academic growth. Additionally, facilities like the
+                music room, library, and school canteen contribute to a vibrant
+                and enriching campus environment.</p>
+            <p>In line with the evolving landscape of education, Western Bicutan
+                National High School is K to 12 ready. Offering senior high
+                school programs in STEM, EIM, Computer Programming, HUMSS, and
+                CSS, the institution ensures that students are prepared for the
+                demands of higher education and the workforce. By providing
+                diverse pathways for academic and career development, the school
+                empowers students to pursue their passions and interests.</p>
+            <p>Located in Phase I EP Housing, Brgy. Pinagsama, this institution
+                embodies a commitment to delivering top-tier education to its
+                diverse student body. With a mission to provide holistic
+                education that is accessible to all learners, Western Bicutan
+                National High School is a testament to educational inclusivity
+                and excellence.</p>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <div class="container py-5" data-aos="fade-up">
+            <h3 class="section-title">Timeline of Milestones</h3>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card timeline-card" data-aos="fade-up">
+                        <div class="timeline-header">
+                            <h5>1990: Establishment of WBNHS</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-date">January 1990</p>
+                            <p>Western Bicutan National High School was founded
+                                with the vision of providing quality education
+                                to the growing community in Western Bicutan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card timeline-card" data-aos="fade-up">
+                        <div class="timeline-header">
+                            <h5>2005: Introduction of Senior High School
+                                Programs</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-date">June 2005</p>
+                            <p>The school expanded its curriculum to include
+                                senior high school programs, offering
+                                specialized tracks such as STEM and HUMSS to
+                                better prepare students for higher education and
+                                employment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card timeline-card" data-aos="fade-up">
+                        <div class="timeline-header">
+                            <h5>2010: Introduction of New School Facilities</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-date">March 2010</p>
+                            <p>The school inaugurated several new facilities,
+                                including a modern science laboratory, upgraded
+                                computer rooms, and a new multipurpose hall, to
+                                accommodate the growing number of students and
+                                enhance learning experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card timeline-card" data-aos="fade-up">
+                        <div class="timeline-header">
+                            <h5>2015: School Achievements in Academic
+                                Competitions</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-date">August 2015</p>
+                            <p>WBNHS students achieved remarkable success in
+                                various academic and extracurricular
+                                competitions, winning awards in regional and
+                                national science fairs, sports events, and
+                                cultural festivals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card timeline-card" data-aos="fade-up">
+                        <div class="timeline-header">
+                            <h5>2020: Implementing Online Education</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-date">March 2020</p>
+                            <p>In response to the COVID-19 pandemic, WBNHS
+                                swiftly transitioned to online learning to
+                                ensure that students continued their education
+                                safely and effectively through various
+                                e-learning platforms and digital tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card timeline-card" data-aos="fade-up">
+                        <div class="timeline-header">
+                            <h5>2022: Completion of the New Library
+                                Building</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-date">January 2022</p>
+                            <p>The school celebrated the completion of its new
+                                state-of-the-art library building, providing
+                                students and faculty with a spacious, modern
+                                space for research, study, and literary
+                                activities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card timeline-card" data-aos="fade-up">
+                        <div class="timeline-header">
+                            <h5>2023: Award for Excellence in Community
+                                Engagement</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-date">December 2023</p>
+                            <p>WBNHS received an award for its outstanding
+                                efforts in community engagement and social
+                                responsibility, organizing numerous outreach
+                                programs, environmental initiatives, and
+                                partnerships with local organizations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card timeline-card" data-aos="fade-up">
+                        <div class="timeline-header">
+                            <h5>2024: Ongoing Infrastructure Development</h5>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-date">Ongoing</p>
+                            <p>WBNHS continues to expand and improve its
+                                infrastructure with ongoing construction
+                                projects, including new classroom buildings and
+                                recreational areas, to ensure that students have
+                                a conducive and modern learning environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="get-in-touch">
+            <p>Contact Us: <a
+                    href="mailto:info@wbnhs.edu.ph">info@wbnhs.edu.ph</a> |
+                Phone: +63 123 456 789</p>
+            <p>&copy; 2024 Western Bicutan National High School</p>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
-            AOS.init({
-                duration: 1000, // Animation duration
-                easing: 'ease-in-out', // Animation easing
-                once: true, // Whether animation should happen only once
-                offset: 120, // Offset value for triggering animations
-                disable: 'mobile' // Disable AOS on mobile devices to improve performance
-            });
+            AOS.init();
         </script>
     </body>
 </html>
